@@ -16,8 +16,11 @@ To analyze the inverse kinematics using DH parameters for a 3 dof planer and 3 d
 
 Inverse kinematics is the use of kinematic equations to determine the motion of a robot to reach a desired position. For example, to perform automated bin picking, a robotic arm used in a manufacturing line needs precise motion from an initial position to a desired position between bins and manufacturing machines. The grasping end of a robot arm is designated as the end-effector. The robot configuration is a list of joint positions that are within the position limits of the robot model and do not violate any constraints the robot has.
 
- Most industrial robots are constructed of several independently controllable articulated joints. Each joint is connected to one or more of the other joints, sometimes in complex configurations. The end effector is attached at the end of the entire “kinematic chain”. When you move any one joint, this will affect the end effector’s pose in various ways.
-
+ Most industrial robots are constructed of several independently controllable articulated joints. Each joint is connected to one or more of the other joints, sometimes in complex configurations. The end effector is attached at the end of the entire “kinematic chain”. When you move any one joint, this will affect the end effector’s pose in various waysopen the roboanalyzer software.
+ 2.select the robot and its degrees of freedom.
+3.change the values of X and Y wherever necessary.
+4.simulate the model for inverse kinematics.
+5.
 This means that there is no simple, direct relationship between the end effector position and any one particular joint.
 
 For example, if you want the robot’s end effector to move 1 mm linearly along the Z-axis, you may need to move all of the joints by a different amount.
@@ -36,50 +39,31 @@ Finally, inverse kinematics algorithms calculate the exact position of each of t
 ![image](https://user-images.githubusercontent.com/36288975/170623020-f27efc12-bb58-4f62-840d-af544ac6689e.png)
 
 ### PROCEDURE:
-
-
-
-
-
-
-
+1.open the roboanalyzer software.
+2.select the robot and its degrees of freedom.
+3.change the values of X and Y wherever necessary.
+4.simulate the model for inverse kinematics.
+5.update the DH parameters of the link configuration and end effector configuration.
 
 ### SIMULATION 
- 
- 
- 
- 
- 
- 
- 
- ### PLOT 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+ ### 3d Planer
+ ![image](https://user-images.githubusercontent.com/93427183/174303965-2792676e-99fc-482e-adc8-01b1bc7d2c4b.png)
 
  
  
+ 
+ 
+ 
+ 
+ ### 3d Articulated
+ ![image](https://user-images.githubusercontent.com/93427183/174304061-796bf207-cd9c-4e38-83c6-7365f1e3a407.png)
 
-
-
-
-
-
-
-
-
-
-
-
-
+ 
+ 
+ 
+ 
+ 
+ 
 
 ### RESULTS :  
+The inverse kinematics using DH parameters for a 3 dof planer and 3 dof articulated robot using roboanalyzer has been analyzed.
